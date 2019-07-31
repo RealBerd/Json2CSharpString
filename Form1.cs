@@ -19,6 +19,7 @@ namespace MockParser
 
         public static string ParseJson2CSharpString(string json, int lineLen = 8, bool strictLenLimit = false)
         {
+            json = json.Trim();
             int counter = 0;
             List<string> resLines = new List<string>();
             string line = "";
